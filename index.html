@@ -140,6 +140,14 @@
             font-size: 0.9em;
             color: #666;
             margin-bottom: 0.8em;
+            display: flex;
+            gap: 1em;
+            align-items: center;
+        }
+
+        .slop-meter {
+            font-size: 0.9em;
+            color: #999;
         }
 
         /* Project preview - screenshots or live previews */
@@ -251,6 +259,10 @@
             color: #999;
         }
 
+        body.dark .slop-meter {
+            color: #777;
+        }
+
         body.dark .project-preview {
             border-color: #444;
         }
@@ -337,7 +349,6 @@
             </div>
             <div class="header-banner">
                 <img src="banner-small.png" alt="Banner">
-                <div class="banner-label">(AI SLOP)</div>
             </div>
         </div>
     </header>
@@ -357,7 +368,10 @@
                     GitHub
                 </a>
             </div>
-            <div class="meta">Week 1 • Shipped Oct 6, 2025</div>
+            <div class="meta">
+                <span>Week 1 • Shipped Oct 6, 2025</span>
+                <span class="slop-meter">🤖 3/3 slop</span>
+            </div>
             <div class="project-preview">
                 <img src="screenshots/x-simulator.png" alt="X Suspension Simulator screenshot">
             </div>
@@ -375,7 +389,10 @@
                     GitHub
                 </a>
             </div>
-            <div class="meta">Week 2 • In Progress</div>
+            <div class="meta">
+                <span>Week 2 • In Progress</span>
+                <span class="slop-meter">🤖 3/3 slop</span>
+            </div>
             <div class="project-preview">
                 <img src="screenshots/fleeting-ink.png" alt="fleeting.ink screenshot">
             </div>
@@ -387,7 +404,10 @@
             <div class="project-header">
                 <h3>alreadytoolate.com</h3>
             </div>
-            <div class="meta">Week 2 • Idea</div>
+            <div class="meta">
+                <span>Week 2 • Idea</span>
+                <span class="slop-meter">🤖 3/3 slop</span>
+            </div>
             <div class="project-preview">
                 <img src="screenshots/alreadytoolate.png" alt="alreadytoolate.com concept">
             </div>
@@ -405,7 +425,10 @@
                     GitHub
                 </a>
             </div>
-            <div class="meta">Week 1 • Shipped Oct 5, 2025</div>
+            <div class="meta">
+                <span>Week 1 • Shipped Oct 5, 2025</span>
+                <span class="slop-meter">🤖 3/3 slop</span>
+            </div>
             <div class="project-preview">
                 <iframe src="https://ishipeveryweek.com" title="ishipeveryweek.com preview"></iframe>
             </div>
@@ -417,7 +440,10 @@
             <div class="project-header">
                 <h3><a href="https://ourlastyears.com" target="_blank">ourlastyears.com</a></h3>
             </div>
-            <div class="meta">Week 1 • Shipped Oct 4, 2025</div>
+            <div class="meta">
+                <span>Week 1 • Shipped Oct 4, 2025</span>
+                <span class="slop-meter">🤖 3/3 slop</span>
+            </div>
             <div class="project-preview">
                 <img src="screenshots/our-last-years.png" alt="ourlastyears.com screenshot">
             </div>
