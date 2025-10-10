@@ -266,6 +266,29 @@
             padding: 8px 12px;
             cursor: pointer;
             font-size: 1em;
+            z-index: 1000;
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 768px) {
+            .theme-toggle {
+                top: 10px;
+                right: 10px;
+            }
+
+            .header-content {
+                flex-direction: column;
+                gap: 1em;
+            }
+
+            .header-banner {
+                order: -1;
+                margin-bottom: 1em;
+            }
+
+            .header-banner img {
+                max-width: 120px;
+            }
         }
 
         /* Dark mode styles */
@@ -514,7 +537,7 @@
     <footer>
         <p>Follow along:</p>
         <div class="social-links">
-            <a href="https://bsky.app/profile/ishipeveryweek.com">🦋 @ishipeveryweek.com</a>
+            <a href="https://bsky.app/profile/ishipeveryday.com">🦋 @ishipeveryday.com</a>
             <a href="https://x.com/shipeveryweek">𝕏 @shipeveryweek (BANNED)</a>
         </div>
     </footer>
