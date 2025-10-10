@@ -244,6 +244,17 @@
             font-size: 0.9em;
         }
 
+        .social-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1em;
+            margin-top: 0.5em;
+        }
+
+        .social-links a {
+            white-space: nowrap;
+        }
+
         /* Dark mode toggle button */
         .theme-toggle {
             position: fixed;
@@ -501,7 +512,11 @@
 
     <!-- Footer -->
     <footer>
-        <p>Follow along: <a href="https://bsky.app/profile/ishipeveryweek.com">🦋 @ishipeveryweek.com</a> | <a href="https://x.com/shipeveryweek">𝕏 @shipeveryweek</a> (BANNED)</p>
+        <p>Follow along:</p>
+        <div class="social-links">
+            <a href="https://bsky.app/profile/ishipeveryweek.com">🦋 @ishipeveryweek.com</a>
+            <a href="https://x.com/shipeveryweek">𝕏 @shipeveryweek (BANNED)</a>
+        </div>
     </footer>
 </body>
 </html>
