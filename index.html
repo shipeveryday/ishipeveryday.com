@@ -122,8 +122,6 @@
         /* Week sections */
         .week-section {
             margin-bottom: 3em;
-            padding-left: 1.5em;
-            border-left: 4px solid #0066cc;
         }
 
         .week-heading {
@@ -134,31 +132,31 @@
             letter-spacing: 0.1em;
         }
 
+        .week-heading a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .week-heading a:hover {
+            text-decoration: underline;
+        }
+
+        .week-section .project:first-of-type {
+            padding-left: 1.5em;
+            border-left: 4px solid #e0e0e0;
+        }
+
+        .week-section .project:not(:first-of-type) {
+            padding-left: 1.5em;
+            border-left: 4px solid #e0e0e0;
+        }
+
         /* Project cards */
         .project {
             margin-bottom: 2em;
             padding: 1.5em;
             border: 1px solid #ddd;
             border-radius: 8px;
-        }
-
-        .project-separator {
-            margin: 3em 0;
-            border: 0;
-            border-top: 2px solid #eee;
-            text-align: center;
-            position: relative;
-        }
-
-        .project-separator::after {
-            content: 'SHIPPED';
-            background: #fff;
-            padding: 0 1em;
-            position: relative;
-            top: -0.7em;
-            color: #999;
-            font-size: 0.85em;
-            font-weight: bold;
         }
 
         .project-header {
@@ -320,12 +318,17 @@
             color: #4d9fff;
         }
 
-        body.dark .week-section {
-            border-left-color: #4d9fff;
-        }
-
         body.dark .week-heading {
             color: #4d9fff;
+        }
+
+        body.dark .week-heading a {
+            color: inherit;
+        }
+
+        body.dark .week-section .project:first-of-type,
+        body.dark .week-section .project:not(:first-of-type) {
+            border-left-color: #2a2a2a;
         }
 
         body.dark .stat-value {
@@ -338,15 +341,6 @@
 
         body.dark .banner-label {
             color: #999;
-        }
-
-        body.dark .project-separator {
-            border-top-color: #333;
-        }
-
-        body.dark .project-separator::after {
-            background: #1a1a1a;
-            color: #666;
         }
 
         body.dark .project {
@@ -477,11 +471,11 @@
 
     <!-- Projects archive -->
     <section>
-        <h2>Projects</h2>
+        <h2>Shipped</h2>
 
         <!-- Week 2 -->
-        <div class="week-section">
-            <div class="week-heading">WEEK 2</div>
+        <div class="week-section" id="week-2">
+            <div class="week-heading"><a href="#week-2">WEEK 2</a></div>
 
             <div class="project">
                 <div class="project-header">
@@ -499,8 +493,8 @@
         </div>
 
         <!-- Week 1 -->
-        <div class="week-section">
-            <div class="week-heading">WEEK 1</div>
+        <div class="week-section" id="week-1">
+            <div class="week-heading"><a href="#week-1">WEEK 1</a></div>
 
             <div class="project">
                 <div class="project-header">
@@ -522,8 +516,6 @@
                 <p>draw together while you still have time</p>
             </div>
 
-            <hr class="project-separator">
-
             <div class="project">
                 <div class="project-header">
                     <h3><a href="https://xsimulator.ishipeveryday.com" target="_blank">Getting Suspended on X (Formerly Twitter) Simulator</a></h3>
@@ -544,8 +536,6 @@
                 <p>based on a true story</p>
             </div>
 
-            <hr class="project-separator">
-
             <div class="project">
                 <div class="project-header">
                     <h3><a href="https://ishipeveryday.com" target="_blank">ishipeveryday.com</a></h3>
@@ -565,8 +555,6 @@
                 </div>
                 <p>This site! A place to document this nonsense. They can't ban me here!</p>
             </div>
-
-            <hr class="project-separator">
 
             <div class="project">
                 <div class="project-header">
