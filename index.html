@@ -92,6 +92,20 @@
             margin-bottom: 1em;
         }
 
+        .header-social {
+            margin-top: 1em;
+            font-size: 1.1em;
+        }
+
+        .header-social a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .header-social a:hover {
+            text-decoration: underline;
+        }
+
         /* Section headings */
         h2 {
             font-size: 1.8em;
@@ -236,18 +250,24 @@
             padding-top: 2em;
             border-top: 1px solid #eee;
             color: #666;
-            font-size: 0.9em;
+            font-size: 1.1em;
         }
 
         .social-links {
             display: flex;
             flex-wrap: wrap;
-            gap: 1em;
+            gap: 1.5em;
             margin-top: 0.5em;
         }
 
         .social-links a {
             white-space: nowrap;
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .social-links a:hover {
+            text-decoration: underline;
         }
 
         /* Dark mode toggle button */
@@ -304,6 +324,10 @@
             color: #999;
         }
 
+        body.dark .header-social a {
+            color: #4d9fff;
+        }
+
         body.dark .week-heading {
             color: #4d9fff;
         }
@@ -349,6 +373,10 @@
         body.dark footer {
             border-top-color: #333;
             color: #999;
+        }
+
+        body.dark .social-links a {
+            color: #4d9fff;
         }
 
         body.dark .theme-toggle {
@@ -408,6 +436,9 @@
                 <div class="week-counter">Week 2 of 52</div>
                 <div class="project-count">5 projects</div>
                 <p>I obsess over architecture and never ship. I can't come up with ideas. So here's the fix: one project per week for a year. Ship fast. Ship slop. Just ship.</p>
+                <div class="header-social">
+                    <a href="https://bsky.app/profile/ishipeveryday.com">🦋 @ishipeveryday.com</a>
+                </div>
             </div>
             <div class="header-banner">
                 <img src="banner-small.png" alt="Banner">
