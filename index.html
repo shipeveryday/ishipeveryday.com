@@ -83,31 +83,13 @@
             font-size: 1.5em;
             font-weight: bold;
             color: #0066cc;
-            margin-bottom: 1em;
+            margin-bottom: 0.5em;
         }
 
-        /* Stats counter */
-        .stats {
-            display: flex;
-            gap: 2em;
-            margin-bottom: 2em;
-            font-size: 0.95em;
-        }
-
-        .stat {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .stat-value {
-            font-size: 1.5em;
-            font-weight: bold;
-            color: #0066cc;
-        }
-
-        .stat-label {
+        .project-count {
+            font-size: 1.2em;
             color: #666;
-            font-size: 0.9em;
+            margin-bottom: 1em;
         }
 
         /* Section headings */
@@ -318,6 +300,10 @@
             color: #4d9fff;
         }
 
+        body.dark .project-count {
+            color: #999;
+        }
+
         body.dark .week-heading {
             color: #4d9fff;
         }
@@ -329,14 +315,6 @@
         body.dark .week-section .project:first-of-type,
         body.dark .week-section .project:not(:first-of-type) {
             border-left-color: #2a2a2a;
-        }
-
-        body.dark .stat-value {
-            color: #4d9fff;
-        }
-
-        body.dark .stat-label {
-            color: #999;
         }
 
         body.dark .banner-label {
@@ -428,20 +406,7 @@
             <div class="header-left">
                 <h1>I Ship Every Day</h1>
                 <div class="week-counter">Week 2 of 52</div>
-                <div class="stats">
-                    <div class="stat">
-                        <div class="stat-value">2</div>
-                        <div class="stat-label">Weeks so far</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-value">5</div>
-                        <div class="stat-label">Projects posted</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-value">0</div>
-                        <div class="stat-label">Weeks missed</div>
-                    </div>
-                </div>
+                <div class="project-count">5 projects</div>
                 <p>I obsess over architecture and never ship. I can't come up with ideas. So here's the fix: one project per week for a year. Ship fast. Ship slop. Just ship.</p>
             </div>
             <div class="header-banner">
